@@ -1,25 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState, useEffect } from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Nav, Container, Navbar, NavLink } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Webcam from "react-webcam";
 
 
+import Home from './pages/Home'
+import Demo from './pages/Demo'
+import Contact from './pages/Contact'
+
+function NavigationBar() {
+    return (
+      <>
+        <Navbar bg="dark" variant="dark">
+          <Container>
+            <Navbar.Brand href="/home">Silver AI</Navbar.Brand>
+            <Nav className="me-auto">
+              <NavLink to="/home">Home</NavLink>
+              <NavLink to="/demo">Demo</NavLink>
+              <NavLink to="/contact">Contact</NavLink>
+            </Nav>
+          </Container>
+        </Navbar>
+        <br/>
+      </>
+    );
+};
+
 function App() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Silver AI</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#demo">Demo</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+      <NavigationBar />
+      <Home />
       <Container style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
         <WebcamStreamCapture></WebcamStreamCapture>
       </Container>
