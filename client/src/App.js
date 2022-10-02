@@ -6,7 +6,6 @@ import { Route, Routes, Link } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import backgroundImage from "./background.png"
 
-
 import Home from './pages/Home'
 import Demo from './pages/Demo'
 
@@ -18,8 +17,8 @@ function NavigationBar() {
             <img className="navbar-logo-image" src="../../../favicon.ico"/>
             <Navbar.Brand href="/home" className="logo">silverAI</Navbar.Brand>
             <Nav className="me-auto">
-                <Link to="/home">Home</Link>
-                <Link to="/demo">Demo</Link>
+                <Link to="/home" className="navLink">Home</Link>
+                <Link to="/demo" className="navLink">Demo</Link>
             </Nav>
           </Container>
         </Navbar>

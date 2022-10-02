@@ -1,7 +1,9 @@
 import React from 'react'
 import { Stack, Container, Row, Col, Button } from 'react-bootstrap'
+import { Route } from 'react-router-dom'
 import styles from './Home.css'
 import ReactTypingEffect from 'react-typing-effect';
+
 
 function Home() {
     return ( 
@@ -50,19 +52,6 @@ function Home() {
 
             <div class="divider"/>
     
-            <Stack direction="horizontal" off gap={3}>
-             {/* add onclick field here */}
-              <Button variant="primary" size = "lg" form="loginButton" type="submit">   
-                Login
-              </Button>
-                            
-              {/* // add onclick field here */}
-              <Button variant="primary" size = "lg"  form="registerButotn" type="submit">   
-                Register
-              </Button>
-
-           
-            </Stack>  
             <div class="divider"/>
             <div class="divider"/>
             <div class="divider"/>

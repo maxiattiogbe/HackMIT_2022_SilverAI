@@ -62,3 +62,9 @@
 .divider{
     padding: 20px;
 }
+
+.smallImage {
+    border-radius: 20px;
+    width: 240px;
+    margin-left: 60%;
+}

@@ -73,7 +73,14 @@ const WebcamStreamCapture = () => {
         <Container className="page">
             <Row>
                 <Col className="columnComponent">
-                    <WebcamStreamCapture/>
+                    <Row>
+                        <WebcamStreamCapture/>
+                    </Row>
+                    
+                    <Row>
+                        <img src={require('./image.png')} className="smallImage"/>
+                    </Row>
+                    
                 </Col>
                 <div className="wall"/>
                 <Col>
@@ -86,8 +93,8 @@ const WebcamStreamCapture = () => {
                         </Col>
                         <Col>
                             <div className="columnComponent">
-                            <div className="stat"><p>68</p></div>
-                                <div className="statSub"><p>SpeakScore</p></div>
+                            <div className="stat"><p>83%</p></div>
+                                <div className="statSub"><p>Accuracy</p></div>
                             </div>
                         </Col>
                     </Row>
@@ -95,13 +102,13 @@ const WebcamStreamCapture = () => {
                     <Row>
                         <Col>
                             <div className="columnComponent">
-                                <div className="stat"><p>92</p></div>
+                                <div className="stat"><p>88</p></div>
                                 <div className="statSub"><p>LateralScore</p></div>
                             </div>
                         </Col>
                         <Col>
                             <div className="columnComponent">
-                            <div className="stat"><p>68</p></div>
+                            <div className="stat"><p>74</p></div>
                                 <div className="statSub"><p>VerticalScore</p></div>
                             </div>
                         </Col>
