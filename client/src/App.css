@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.background {
+  background-color: #282c34;
+}
+
+
+.navbarTexts {
+  font-weight: bold;
+}

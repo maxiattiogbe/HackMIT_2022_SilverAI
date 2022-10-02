@@ -7,26 +7,42 @@ function Home() {
     return ( 
         <Container>
             <div class="divider"/>
+            <div class="divider"/>
+            
             <Row>
                 <ReactTypingEffect 
                         class="centerTyped"
                         text={["Daily Practices.", "AI-Powered Lip-Tracking.", "Digital Enunciation Coach."]}
-                        cursorRenderer={cursor => <h1>{cursor}</h1>}
-                        eraseDelay={999999}
+                        cursorRenderer={cursor => <div class="centerTypedFont">{cursor}</div>}
+                        eraseDelay={500}
                         displayTextRenderer={(text) => {
                             return(
-                                <h1>{text}</h1>
+                                <div class="centerTypedFont">
+                                    <p>{text}</p>
+                                </div>
+                                
                             );
                         }}
                     />
             </Row>
+            
+            <div class="divider"/>
             <div class="divider"/>
             <div class="divider"/>
             <Row>
-                <h1>Hello.</h1>
+                <div class="centerTypedFont">
+                    <p>&#128075; Hello.</p>
+                </div>
             </Row>
             <Row>
-                <h1>We're the modern, revolutionized app to tackle speech pathology.</h1>
+                <Col>
+                    <div>
+                        <h1 class="subTextFont">We're the modern, revolutionized app <br/> 
+                        to tackling speech pathology.</h1>
+                    </div>
+                    
+                </Col>
+                
             </Row>
             
             <Row>
@@ -35,16 +51,23 @@ function Home() {
             <div class="divider"/>
     
             <Stack direction="horizontal" off gap={3}>
-              <Button variant="primary" size = "lg" form="loginButton" type="submit">
+             {/* add onclick field here */}
+              <Button variant="primary" size = "lg" form="loginButton" type="submit">   
                 Login
               </Button>
-    
-              <Button variant="primary" size = "lg"  form="registerButotn" type="submit">
+                            
+              {/* // add onclick field here */}
+              <Button variant="primary" size = "lg"  form="registerButotn" type="submit">   
                 Register
               </Button>
 
            
-          </Stack>
+            </Stack>  
+            <div class="divider"/>
+            <div class="divider"/>
+            <div class="divider"/>
+            <div class="divider"/>
+            <div class="divider"/>
         </Container>
         
     );

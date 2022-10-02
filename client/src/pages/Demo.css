@@ -1,0 +1,64 @@
+.webcam {
+    border-radius: 20px 20px 20px 20px;
+    object-fit: contain;
+}
+
+.columnComponent {
+    border-radius: 25px 25px 25px 25px;
+    background-color: white;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    justify-self: center;
+    align-content: center;
+}
+
+.page {
+    flex: 1;
+    background-color: #282c34;
+}
+
+.wall {
+    width: 10px;
+}
+
+.hWall {
+    height: 20px;
+}
+
+
+.stat {
+    color: black;
+    font-weight: bold;
+    font-size: 72px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    line-height: 50pt;
+}
+
+.statSub {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.tipHeader {
+    color: black;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 20pt;
+}
+
+.tipText {
+    color: black;
+    font-size: 18px;
+}
+
+.divider{
+    padding: 20px;
+}
