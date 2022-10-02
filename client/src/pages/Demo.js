@@ -1,7 +1,11 @@
 import React from 'react'
+import { useState, useEffect, setState } from 'react';
+import props from 'react';
 import { Container, Button, Row, Col } from 'react-bootstrap'
 import Webcam from "react-webcam";
 import styles from './Demo.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 
 
 const WebcamStreamCapture = () => {
@@ -68,8 +72,29 @@ const WebcamStreamCapture = () => {
     );
   };
 
-  function Demo() {
-    return (
+  const Demo = () => {
+
+
+
+    const [scores, setScores] = useState([]);
+
+    useEffect(() => {
+
+      const fetchData = async () => {
+        const response = await fetch('/scores').then(
+          response => response.json().then(
+            data => {
+              setScores(data);
+              console.log(data)
+            }
+          )
+        );
+      };
+
+      fetchData();
+    }, []);
+
+      return (
         <Container className="page">
             <Row>
                 <Col className="columnComponent">
@@ -84,16 +109,17 @@ const WebcamStreamCapture = () => {
                 </Col>
                 <div className="wall"/>
                 <Col>
+                <Button variant="primary" size = "lg" form="powerballButton" type="submit" />
                     <Row>
                         <Col>
                             <div className="columnComponent">
-                                <div className="stat"><p>92</p></div>
+                                <div className="stat"><p>{scores["speakScore"]}</p></div>
                                 <div className="statSub"><p>SpeakScore</p></div>
                             </div>
                         </Col>
                         <Col>
                             <div className="columnComponent">
-                            <div className="stat"><p>83%</p></div>
+                            <div className="stat"><p>{scores["accuracy"]}%</p></div>
                                 <div className="statSub"><p>Accuracy</p></div>
                             </div>
                         </Col>
@@ -102,13 +128,13 @@ const WebcamStreamCapture = () => {
                     <Row>
                         <Col>
                             <div className="columnComponent">
-                                <div className="stat"><p>88</p></div>
+                                <div className="stat"><p>{scores["lateral"]}</p></div>
                                 <div className="statSub"><p>LateralScore</p></div>
                             </div>
                         </Col>
                         <Col>
                             <div className="columnComponent">
-                            <div className="stat"><p>74</p></div>
+                            <div className="stat"><p>{scores["vertical"]}</p></div>
                                 <div className="statSub"><p>VerticalScore</p></div>
                             </div>
                         </Col>
@@ -135,9 +161,9 @@ const WebcamStreamCapture = () => {
             <div class="divider"/>
             <div class="divider"/>
         </Container>
-    );
+      );
+
+    
   }
 
 export default Demo;
-
-{/* <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}> */}
