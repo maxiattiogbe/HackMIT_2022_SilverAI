@@ -1,5 +1,17 @@
 # HackMIT 2022: Silver AI
 
+&#128075; Hello.
+
+We're the modern, revolutionized app to tackling speech pathology.
+
+- Front End
+
+  - React
+
+- Back End
+  - Flask
+  - TensorFlow
+
 ## Dependencies:
 
 - Flask (pip3 install Flask)
