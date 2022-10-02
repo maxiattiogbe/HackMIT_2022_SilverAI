@@ -15,7 +15,7 @@ function NavigationBar() {
         <Navbar bg="dark" variant="dark">
           <Container>
             <img className="navbar-logo-image" src="../../../favicon.ico"/>
-            <Navbar.Brand href="/home" className="logo">silverAI</Navbar.Brand>
+            <Navbar.Brand href="/home" className="logo">SilverAI</Navbar.Brand>
             <Nav className="me-auto">
                 <Link to="/home" className="navLink">Home</Link>
                 <Link to="/demo" className="navLink">Demo</Link>

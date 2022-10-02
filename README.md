@@ -10,7 +10,7 @@ We're the modern, revolutionized app to tackling speech pathology.
 
 - Back End
   - Flask
-  - TensorFlow
+  - Teachable Machine
 
 ## Dependencies:
 
