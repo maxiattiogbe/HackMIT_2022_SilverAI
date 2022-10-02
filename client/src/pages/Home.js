@@ -40,7 +40,7 @@ function Home() {
                 <Col>
                     <div>
                         <h1 class="subTextFont">We're the modern, revolutionized app <br/> 
-                        to tackling speech pathology.</h1>
+                        tackling speech pathology.</h1>
                     </div>
                     
                 </Col>
