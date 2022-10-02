@@ -3,6 +3,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react'
 import { Nav, Container, Navbar, NavLink } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import backgroundImage from "./background.png"
 
 
 import Home from './pages/Home'
@@ -14,11 +15,10 @@ function NavigationBar() {
       <>
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Navbar.Brand href="/home">Silver AI</Navbar.Brand>
+            <Navbar.Brand href="/home" className="logo">silverAI</Navbar.Brand>
             <Nav className="me-auto">
                 <NavLink to="/home">Home</NavLink>
                 <NavLink to="/demo">Demo</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
             </Nav>
           </Container>
         </Navbar>
@@ -29,10 +29,10 @@ function NavigationBar() {
 
 function App() {
   return (
-    <div class="background">
+    <div style={{backgroundImage:`url(${backgroundImage})`}}>
       <NavigationBar />
-      <Home />
-      {/* <Demo/> */}
+      {/* <Home /> */}
+      <Demo/>
     </div>
   );
 }
