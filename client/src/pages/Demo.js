@@ -78,7 +78,9 @@ const WebcamStreamCapture = () => {
                     </Row>
                     
                     <Row>
-                        <img src={require('./image.png')} className="smallImage"/>
+                        <img src={require('./image.png')} className="column"/>
+                        <img src={require('./image.png')} className="column"/>
+                        <img src={require('./image.png')} className="column"/>
                     </Row>
                     
                 </Col>

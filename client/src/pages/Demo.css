@@ -63,8 +63,9 @@
     padding: 20px;
 }
 
-.smallImage {
+.column {
+    flex: 33.33%;
+    padding: 5px;
     border-radius: 20px;
-    width: 240px;
-    margin-left: 60%;
-}
+    width: 10%;
+  }
