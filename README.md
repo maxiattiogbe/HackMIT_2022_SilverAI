@@ -1,4 +1,4 @@
-# HackMIT 2022: Silver AI
+# HackMIT 2022: SilverAI
 
 &#128075; Hello.
 
