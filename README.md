@@ -2,7 +2,7 @@
 
 &#128075; Hello.
 
-We're the modern, revolutionized app to tackling speech pathology.
+We're the modern, revolutionized app tackling speech pathology.
 
 - Front End
 
