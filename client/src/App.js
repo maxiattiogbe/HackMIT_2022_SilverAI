@@ -14,6 +14,7 @@ function NavigationBar() {
       <>
         <Navbar bg="dark" variant="dark">
           <Container>
+            <img className="navbar-logo-image" src="../../../favicon.ico"/>
             <Navbar.Brand href="/home">Silver AI</Navbar.Brand>
             <Nav className="me-auto">
                 <NavLink to="/home">Home</NavLink>
