@@ -4,7 +4,7 @@
 
 We're the modern, revolutionized app tackling speech pathology.
 
-SilverAI is designed to help people with speech impediments practice pronouncing words correctly and uses lip tracking and audio processing using ML to provide feedback users could ultimatey use to improve so they can speak more clearly.
+SilverAI is designed to help people with speech impediments practice pronouncing words correctly by allowing users to record and download webcam videos of themselves speaking and then uses lip tracking and audio processing using ML to provide feedback users could ultimately use to improve so they can speak more clearly.
 
 - Front End
 
