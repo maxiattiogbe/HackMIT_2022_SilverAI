@@ -18,6 +18,4 @@ SilverAI is designed to help people with speech impediments practice pronouncing
 
 - Flask (pip3 install Flask)
 
-To run our web app go to the client folder
-
-then go to the client folder README for directions
+To run our web app go to the client folder then go to the client folder README for directions.
