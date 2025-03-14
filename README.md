@@ -1,5 +1,7 @@
 # HackMIT 2022: SilverAI
 
+<img width="1505" alt="image" src="https://github.com/user-attachments/assets/a994fa76-b042-49e4-8952-4fc84c4145b9" />
+
 &#128075; Hello.
 
 We're the modern, revolutionized app tackling speech pathology.
